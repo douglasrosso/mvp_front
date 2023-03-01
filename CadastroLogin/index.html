@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../assets/icon_useall.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script src="index.js"defer></script>
+    <title>Cadastro</title>
+
+</head>
+<body>
+    <div id="dados">
+
+        <h1>Registro de <span>Usuário</span></h1>
+        <p>Faça seu cadastro para conseguir <br> fazer o login e ter acesso a sua UC</p>
+
+        <section class="cad">
+            <form >
+
+                    <fieldset>
+
+                        <li>
+                            <label for="name">Nome</label>
+                            <input id="name" type="text" name="name" placeholder="Digite seu nome completo" autofocus autocomplete="off">
+                        </li>
+                        
+                        <li>
+                            <label for="tipopessoa">Tipo Pessoa</label>
+                            <select name="tipopessoa" id="tipopessoa">
+                                <option value="fisica">Pessoa Física</option>
+                                <option value="juridica">Pessoa Jurídica</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="cpfcnpj"> <b>CPF/CNPJ</b> </label>
+                            <input class="cpfcnpj" id="cpfcnpj" type="text" name="cpfcnpj" placeholder="CPF/CNPJ"
+                                autocomplete="off">
+                            <script type="text/javascript">
+                                var options = {
+                                    onKeyPress: function (cpf, ev, el, op) {
+                                        var masks = ['000.000.000-000', '00.000.000/0000-00'];
+                                        $('.cpfcnpj').mask((cpf.length > 14) ? masks[1] : masks[0], op);
+                                    }
+                                }
+                                $('.cpfcnpj').length > 11 ? $('.cpfcnpj').mask('00.000.000/0000-00', options) : $('.cpfcnpj').mask('000.000.000-00#', options);
+                            </script>
+                        </li>
+                        <li>
+                            <label for="email">E-mail</label>
+                            <input required="" id="email" type="text" name="email" placeholder="Digite seu e-mail">
+                        </li>
+                        <li>
+                            <label for="senha">Senha</label>
+                            <input required="" id="senha" type="password" name="senha" placeholder="Digite sua senha">
+                        </li>
+                        
+                        <li>
+                            <label for="senhaC">Confirme sua Senha</label>
+                            <input required="" id="senhaC" type="password" name="senhaC" placeholder="Confirme sua senha">
+                        </li>
+                        <li><button type="submit" onclick="return validarSenha()"> EFETUAR CADASTRO</button></li>
+
+                    </fieldset>
+                    
+            </form>
+        </section>
+    </div>
+    <div id="imagem"><img src="../assets/logo_useall.png" alt="Logo da useall"></div>
+</body>
+</html>

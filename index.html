@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Login/style.css" />
+    <link rel="icon" href="./assets/icon_useall.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script src="./Login/index.js" type="module" defer></script>
+    <title>Login</title>
+
+</head>
+
+<body>
+    <div id="dados">
+
+        <h1>Bem vindo ao <span>LOGIN</span></h1>
+        <p>Preencha os dados do login para entrar e ter <br> acesso a sua unidade consumidora</p>
+
+        <section class="log">
+            <form action="post">
+
+                <fieldset>
+
+                    <li>
+                        <label for="cpfcnpj"> <b>CPF/CNPJ</b> </label>
+                        <input class="cpfcnpj" id="cpfcnpj" type="text" name="cpfcnpj" placeholder="CPF/CNPJ" autofocus
+                            autocomplete="off" required>
+                        <script type="text/javascript">
+                            var options = {
+                                onKeyPress: function (cpf, ev, el, op) {
+                                    var masks = ['000.000.000-000', '00.000.000/0000-00'];
+                                    $('.cpfcnpj').mask((cpf.length > 14) ? masks[1] : masks[0], op);
+                                }
+                            }
+                            $('.cpfcnpj').length > 11 ? $('.cpfcnpj').mask('00.000.000/0000-00', options) : $('.cpfcnpj').mask('000.000.000-00#', options);
+                        </script>
+                    </li>
+
+                    <li>
+                        <label for="SENHA"> <b>Senha</b> </label>
+                        <input id="password" type="password" name="senha" placeholder="Digite sua Senha" required>
+                    </li>
+
+                    <li>
+                        <input id="entrar" type="submit" value="ENTRAR">
+                    </li>
+
+                </fieldset>
+                <p id="esquecisenha"><a href="./RedefinirSenha/index.html"><b>Esqueci minha senha</b></a></p>
+                <p id="naopossuiconta">Ainda não possui uma conta? <a href="./CadastroLogin/index.html"> <b>Clique aqui</b> </a>
+                </p>
+
+            </form>
+        </section>
+    </div>
+    <div id="imagem"><img src="./assets/logo_useall.png" alt="Logo da useall"></div>
+</body>
+</html>

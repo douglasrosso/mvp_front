@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background: white url(../assets/background_useall.png) center center no-repeat fixed;
+    background-size: cover;
+}
+
+div#quadrado-branco {
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    width: 400px;
+    height: 500px;
+    top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 0px 30px rgb(193, 192, 199);
+    margin-top: 35px;
+}
+
+div#logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 259px;
+    /*/tem que deixar a div do tamanho da imagem pra conseguir centralizar ela/*/
+    margin-top: 65px;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 40px;
+    
+}
+
+span{
+    color: #644FE0;
+}
+
+p {
+    margin-top: 25px;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0.1px;
+}
+
+table {
+    align-items: center;
+    padding-left: 60px;
+}
+
+input {
+    margin-top: 25px; 
+    color: rgb(65, 65, 65);
+    height: 28px;
+    outline: none;
+    background: #FAFAFC;
+    border: 1px solid #66666C;
+    border-radius: 8px;
+    width: 210.5px;
+}
+
+input::placeholder {
+    color: rgb(65, 65, 65);
+    font-size: 13px;
+}
+
+label{
+    padding-left: 15px;
+}
+
+button {
+    margin-top: 25px;
+    /*para ter um espaçamento entre eles*/ 
+    color: rgb(255, 255, 255);
+    height: 32px;
+    outline: none;
+    background: rgb(48, 46, 46); 
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 150px;
+    margin-left: 125px;
+}
+
+button:hover{
+    background-color: #644FE0;
+    box-shadow: 1px 1px 5px #644FE0;
+}

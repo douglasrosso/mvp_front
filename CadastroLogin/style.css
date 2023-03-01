@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+span {
+    color: #644FE0;
+}
+
+body {
+    height: 80vh;
+    background: white url(../assets/background_useall.png) center center no-repeat fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+div#imagem {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 90px;
+}
+
+div#dados {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    background-color: rgb(255, 251, 251);
+    width: 553px;
+    height: 650px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 30px rgb(193, 192, 199);
+}
+
+form {
+    width: 500px;
+    margin: 40px;
+    /*para ficar um input em cima do outro*/
+    margin-bottom: 0px;
+}
+
+#tipopessoa {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    /*para ter um espaçamento entre eles*/
+    width: 61.5%;
+    color: rgb(65, 65, 65);
+    height: 30.5px;
+    outline: none;
+    padding-left: 8px;
+    background: #FAFAFC;
+    border: 1px solid #66666C;
+    border-radius: 8px;
+    padding-left: 0px; 
+}
+
+input {
+   position: relative;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-right: 0px;
+    /*para ter um espaçamento entre eles*/
+    width: 60%;
+    color: rgb(65, 65, 65);
+    height: 28px;
+    outline: none;
+    background: #FAFAFC;
+    border: 1px solid #66666C;
+    border-radius: 8px;    
+}
+
+input::placeholder {
+    color: rgb(65, 65, 65);
+    font-size: 13px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 30px;
+    /*para ter um espaçamento entre eles*/
+    width: 62%;
+    color: rgb(255, 255, 255);
+    height: 32px;
+    outline: none;
+    padding-left: 10px;
+    background: rgb(48, 46, 46);
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #644FE0;
+}
+
+li {
+    list-style-type: none;
+}
+
+fieldset{
+    border:none;
+    text-align: right;
+    width: 340px;
+}

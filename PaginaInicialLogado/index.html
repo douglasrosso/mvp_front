@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"type="module" defer></script>
+
+    <title>Página Inicial</title>
+
+</head>
+
+<body>
+    <!-- <img id="image01" src="../assets/icon_useall.png" alt=""> -->
+    <p id="bemvindo">Seja, <br> <b>Bem vindo</b></p>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li class="mudacor2"><a href="#">Home</a></li>
+                <li class="mudacor2"><a href="#">Serviços</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li class="mudacor"> <a href="#">Informar Falta de Energia</a></li>
+                            <li class="mudacor"> <a href="#">Consultar Serviços</a></li>
+                            <li class="mudacor"> <a href="#">Consultar Atendimentos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mudacor2"><a href="#">Dados Cadastrais</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li class="mudacor"><a href="#">Declaração de Quitaçao de Débitos</a></li>
+                            <li class="mudacor"><a href="#">Convênios</a></li>
+                            <li class="mudacor"><a href="#">Simulação de Faturamento</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mudacor2"><a href="#">Fale Conosco</a>
+                    <div class="sub-menu-3">
+                        <ul>
+                            <li class="mudacor"><a href="#">Dúvidas</a></li>
+                            <li class="mudacor"><a href="#">Reclamações</a></li>
+                            <li class="mudacor"><a href="#">Sugestões</a></li>
+                            <li class="mudacor"><a href="#">Elogios</a></li>
+                            <li class="mudacor"><a href="#">Denúncia de Irregularidade</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <a id='sair' href='../index.html'>Sair</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="caixaroxa">
+            <div id="caixap">
+                <p>Ao lado estão todas as Unidades Consumidoras cadastradas no seu CPF/CNPJ. <br> <br> Selecione a
+                    que deseja e veja as informações como 2ª via da fatura ou histórico de consumo, entre
+                    outras informações</p>
+            </div>
+
+        </div>
+        <div id="caixabranca">
+            <h1>Unidades Consumidoras</h1>
+            <table id="tabela-uc">
+                <thead id="cabecalho">
+                    <tr>
+                        <th colspan="2">As suas unidades consumidoras são as seguintes:</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo">
+                   
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div id="rodape">
+            <img src="../assets/logo_useall.png" alt="logo da useall">
+            <p>T: (48) 3411-0600 <br> © 2023 by Useall Team</p>
+
+        </div>
+    </footer>
+   
+</body>
+
+</html>

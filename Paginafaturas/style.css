@@ -1,0 +1,188 @@
+body {
+    background: white url(../assets/background.png) center center no-repeat fixed;
+    background-size: cover;
+    height: 90vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    position: relative;
+    display: flex;
+}
+
+#cabecalho {
+    top: 5px;
+    padding-left: 7%;
+    margin-bottom: 5%;
+}
+
+#logo-cabecalho {
+    position: absolute;
+    display: inline;
+    left: 1%;
+    top: 15px;
+}
+
+/*/---------------------------------CAIXA BRANCA 1 ---------------------------------/*/
+
+#caixabranca1 {
+    position: relative;
+    height: 80vh;
+    width: 50vw;
+    background-color: white;
+    margin-left: 1%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 30px rgb(193, 192, 199);
+}
+
+@media (max-height: 768px) {
+    #caixabranca1 {
+        height: 111vh;
+    }
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.paragrafo-titulo {
+    text-align: center;
+}
+
+#dados-cinza {
+    margin-top: 5%;
+    background-color: rgb(224, 224, 224);
+    width: 40vw;
+    margin-left: 3.1vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#dados-cinza p {
+    margin-left: 20px;
+}
+
+#acessos-cinza {
+    height: 34vh;
+    margin-top: 5%;
+    background-color: rgb(224, 224, 224);
+    width: 40vw;
+    margin-left: 3.1vw;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+@media (max-height: 768px) {
+    #acessos-cinza {
+        height: 48vh;
+    }
+
+}
+
+a {
+    display: block;
+    line-height: 2.0;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #644FE0;
+}
+
+#acessos-cinza a {
+    margin-left: 20px;
+}
+
+#links-uteis {
+    margin-top: 40px;
+}
+
+/*/-----------------------CAIXA BRANCA 2 -----------------------------/*/
+
+#caixabranca2 {
+    position: relative;
+    height: 80vh;
+    width: 50vw;
+    background-color: white;
+    margin-left: 1.5%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 30px rgb(193, 192, 199);
+}
+
+@media (max-height: 768px) {
+    #caixabranca2 {
+        height: 111vh;
+    }
+}
+
+#vias-cinza {
+    height: 26vh;
+    margin-top: 5%;
+    background-color: rgb(224, 224, 224);
+    width: 40vw;
+    margin-left: 3.1vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+@media (max-height: 768px) {
+    #vias-cinza {
+        height: 35vh;
+    }
+}
+
+#gasto-cinza {
+    height: 38vh;
+    margin-top: 5%;
+    background-color: rgb(224, 224, 224);
+    width: 40vw;
+    margin-left: 3.1vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-height: 768px) {
+    #gasto-cinza {
+        height: 55vh;
+    }
+}
+
+#unidade-consumidora {
+    position: absolute;
+    padding-left: 5px;
+    font-weight: bolder;
+    top: 45px;
+}
+
+#imgabaixo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2vh;
+}
+
+span {
+    color: #644FE0;
+}
+
+.linkpdf {
+    display: inline;
+    margin-left: 5px;
+}
+
+/*/----------------------GRAFICO----------------------------------/*/
+
+canvas {
+    border: 1px dotted rgba(255, 255, 255, 0);
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 40vh;
+    width: 40vw;
+}
